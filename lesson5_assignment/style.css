@@ -3,15 +3,15 @@ body {
 	font-family: "Times New Roman", Times, serif;
 	font-size: 14px;
 	line-height: 2em;
-	color: #FFFFFF;
-	background-color: #0946B2;
+	color: #0047B3;
+	background-color: #FAFCFF;
 	padding: 0 40px;
 }
 
 /* basic text styles ----------------------------  */
 p, li, td {
 	letter-spacing: 0.1em;
-	color: #FFC241;
+	color: #FFAA00;
 }
 h1 {
 	font-size: 27px;
@@ -25,14 +25,14 @@ h2 {
 	padding: 6px;
 	font-variant: small-caps;
 	letter-spacing: 0.5em;
-	background-color: #B27B04;
+	background-color: #FAFCFF;
 }
 h3 {
 	font-size: 22px;
 	letter-spacing: 0.5em;
 	border-bottom-width: 1px;
 	border-bottom-style: inset;
-	border-bottom-color: #C0D6FF;
+	border-bottom-color: #B37700;
 	padding: 4px 0;
 	font-variant: small-caps;
 	font-style: italic;
@@ -41,16 +41,16 @@ h3 {
 /* link styles ---------------------------- */
 a:link {
 	font-weight: bold;
-	color: #C0D6FF;
+	color: #B37700;
 	text-decoration: none;
 }
 a:visited {
 	font-weight: bold;
-	color: #C0D6FF;
+	color: #B37700;
 	text-decoration: none;
 }
 a:hover {
-	color: #FFFF00;
+	color: #FFC54E;
 }
 
 /* list styles ----------------------------- */
@@ -64,32 +64,32 @@ ol {
 
 /* table styles -------------------------------------- */
 table {
-	border: solid #FFC241 1px;
+	border: solid #FFC54E 1px;
 }
 td {
 	padding: 6px;
-	border: solid #FFC241 1px;
+	border: solid #FFC54E 1px;
 }
 th {
 	font-weight: bold;
-	background-color: #0946B2;
+	background-color:#FAFCFF;
 	text-align: center;
 	padding: 6px;
-	border: solid #FFC241 1px;
+	border: solid #FFC54E 1px;
 }
 
 /* border styles ------------------------------------ */
 hr {
-	border: solid #FFC241 1px;
+	border: solid #FFAA00 1px;
 }
 
 img {
-	border: solid #FFC241 1px;
+	border: solid #FFAA00 1px;
 
 }
 
 iframe {
-	border: solid #FFC241 1px;
+	border: solid #FFAA00 1px;
 	padding: 8px;
 	margin: 8px;
 }
