@@ -1,17 +1,16 @@
-
 body {
 	font-family: "Times New Roman", Times, serif;
 	font-size: 14px;
 	line-height: 2em;
-	color: #FFFFFF;
-	background-color: #0946B2;
+	color: #0047B3;
+	background-color: #E5E5E5;
 	padding: 0 40px;
 }
 
 /* basic text styles ----------------------------  */
 p, li, td {
 	letter-spacing: 0.1em;
-	color: #FFC241;
+	color: #FFAA00;
 }
 h1 {
 	font-size: 27px;
@@ -25,14 +24,14 @@ h2 {
 	padding: 6px;
 	font-variant: small-caps;
 	letter-spacing: 0.5em;
-	background-color: #B27B04;
+	background-color: #E5E5E5;
 }
 h3 {
 	font-size: 22px;
 	letter-spacing: 0.5em;
 	border-bottom-width: 1px;
 	border-bottom-style: inset;
-	border-bottom-color: #C0D6FF;
+	border-bottom-color: #B37700;
 	padding: 4px 0;
 	font-variant: small-caps;
 	font-style: italic;
@@ -41,16 +40,16 @@ h3 {
 /* link styles ---------------------------- */
 a:link {
 	font-weight: bold;
-	color: #C0D6FF;
+	color: #B37700;
 	text-decoration: none;
 }
 a:visited {
 	font-weight: bold;
-	color: #C0D6FF;
+	color: #B37700;
 	text-decoration: none;
 }
 a:hover {
-	color: #FFFF00;
+	color: #FFC54E;
 }
 
 /* list styles ----------------------------- */
@@ -64,32 +63,133 @@ ol {
 
 /* table styles -------------------------------------- */
 table {
-	border: solid #FFC241 1px;
+	border: solid #FFC54E 1px;
 }
 td {
 	padding: 6px;
-	border: solid #FFC241 1px;
+	border: solid #FFC54E 1px;
 }
 th {
 	font-weight: bold;
-	background-color: #0946B2;
+	background-color:#E5E5E5;
 	text-align: center;
 	padding: 6px;
-	border: solid #FFC241 1px;
+	border: solid #FFC54E 1px;
 }
 
 /* border styles ------------------------------------ */
 hr {
-	border: solid #FFC241 1px;
+	border: solid #FFAA00 1px;
 }
 
 img {
-	border: solid #FFC241 1px;
+	border: solid #FFAA00 1px;
 
 }
 
 iframe {
-	border: solid #FFC241 1px;
+	border: solid #FFAA00 1px;
 	padding: 8px;
 	margin: 8px;
 }
+
+/* div styles */
+
+#container{
+	width: 900%
+	margin: 0 auto;
+	background-color: #E5E5E5;
+	overflow: hidden;
+}
+
+#header{
+	width: 100%;
+	background-color: #E5E5E5;
+}
+
+#content{
+	width:600px;
+	float: left;
+	padding-bottom: 40px;
+}
+
+#content-media{
+	float: left;
+}
+#sidebar{ 
+	width: 300px;
+	float: right;
+}
+
+#sidebar p{
+	padding: 10px;
+	background: #FFFFFF;
+	border: 1px solid #FFAA00;
+	border-radius: 12px;
+	box-shadow: 10px 10px 5px #FFAA00 ;
+}
+
+#footer{
+	width: 100%;
+	background-color: #E5E5E5;
+	border-top: 1px solid #FFAA00;
+	padding: 40px 0;
+	clear: both;
+}
+
+#footer p{
+	margin: 0;
+}
+
+#navbar{
+	width: 100%; /* as wide as container - make sure buttons don't exceed container width */
+	/* reducing height hides the bottom of the buttons and the bottom rounded corners of buttons */
+	height: 95px;
+	overflow: hidden; /* necessary for tab style nav bar to hide bottom of buttons */
+	margin-bottom: 0px; /* pushes page content down */
+}	
+	
+	/* horizontal menu bars are typically created using a styled unordered list. Here's how! */
+ul#menu {
+	list-style: none; /* eliminates bullets */
+} 
+ul#menu li{
+	float: left; /* changes list from vertical to horizontal */
+	margin-left: -6px;
+} 
+ul#menu li a.button {
+	background-color: #fcf3ae; /* button/tab color */
+	color: #9b9744; /* font color */
+	font-size: 1.2em;
+	text-decoration: none; /* removes the link underline */
+	/* the padding define the size of the buttons */
+	/* increase bottom padding for tabs with hidden bottoms so tab text can be seen*/
+	padding: 6px 20px; 	
+	/* rounded corners turn buttons into tabs when bottom of button is hidden */
+	border-radius: 0; 
+	border: solid 1px; /* 1-pixel border around buttons. */
+}
+/* styles for the currently selected page should be different to make it stand out */
+/* also you want to discourage users from clicking the button for the current page */
+ul#menu li a.button.selected{
+	background-color:  #fff; /* matching the color of the content background color */
+	color: #000; /* font color */
+	font-style: italic;
+}
+/* visited link font colors */
+ul#menu li a.button:visited {
+	color: #9b9744;
+}  
+ul#menu li a.button:visited.selected{
+	color: #000;
+} 
+/* hover link styles */
+ul#menu li a.button:hover {
+	background-color:#9b9744;
+	color: #fcf3ae;
+} 
+/* selected button shouldn't change on hover */ 
+ul#menu li a.button:hover.selected{ 
+	background-color: #fff;
+	color:  #000;
+} 
