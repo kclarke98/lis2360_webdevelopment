@@ -7,7 +7,7 @@
 	    <meta name="overview" content="Overview of Site">
 	    <meta name="media" content="Videos for Site">
 	    <meta name="author" content="Information about the Author">
-	    
+	   
 	    <title>Artificial Intelligence</title>
 	    <link href="style.css" rel="stylesheet" type ="text/css">
 	    <link href="style-navbar.css" rel="stylesheet" type ="text/css">
@@ -168,6 +168,21 @@
         </section> <!-- end footer -->
         
         <hr>
+    
+    <!-- JAVASCRIPT CODE -->
+<!--jquery required for scrolling effect -->
+<script src="js/jquery.js"></script>
+<!-- Scrolling navigation script by Geo Miller glmiller@pic.fsu.edu -->  
+<script type='text/javascript'>
+jQuery(document).ready(function () {
+  jQuery('.button').click(function() {
+    targetName = jQuery(this).attr('href');
+    targetLocation = jQuery(targetName).offset().top;
+    jQuery('html, body').animate({scrollTop:targetLocation}, 'slow');
+    return false;
+  });
+});
+</script>
             
     </body>
     
